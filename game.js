@@ -81,6 +81,6 @@ function pressingAnimation(autoColorPicker){
 
 // making a function for playing sound, so that it will be easier to add sound every time 
 function playSound(sound){
-    var soundName = new Audio('./sounds/' + sound + ".mp3");
+    var soundName = new Audio('sounds/' + sound + ".mp3");
     soundName.play();
 }
