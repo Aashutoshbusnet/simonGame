@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* Just designing the body */
+body{
+    background-color: pink;
+}
+/* designing the container where all the items will be, like the heading and the rest of the boxes */
+.main-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    text-align: center;
+}
+/* designing the heading which will be displayed above the boxes */
+.heading{
+    font-size: 80px;
+    font-family: monospace;
+    overflow: none
+;
+}
+/* designign the rows, just making it flex so it will be easy for me to resize  */
+.row{
+    display: flex;
+    gap: 200px;
+}
+/* designign the box class which will be applied to all boxes */
+.box{
+    height: 11rem;
+    width: 11rem;
+    border: 12px solid white;
+    border-radius: 10px;
+}
+
+
+.box:hover{
+    cursor: pointer;
+}
+
+
+/* if user answers wrong then this will happen */
+.backgroundImage {
+    /* width: 100vw; */
+    background-color: black;
+    background-image: url('haramiaashutosh.jpeg');
+    background-size: contain; /* Change to contain */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat;
+    height: 100vh;
+    color: white;
+    font-size: 5rem;
+}
+
+
+/* just giving color to the boxes */
+.red{
+    background: red;
+}
+.green{
+    background: green;
+}
+
+.blue{
+    background: blue;
+}
+
+.yellow{
+    background-color: yellow;
+}
+/* this will be applied when the user will press or simply click the button  */
+.pressed{
+    height: 20rem;
+    width: 20rem;
+    background-color: grey;
+    border-radius: 50%;
+}
+/* this will be appiled when the input will be wrong */
+.wrong{
+    background: rebeccapurple;
+}
+
+/* this media query will be triggered at certain sizes */
+
+@media (max-width: 775px) and (min-width: 555px){
+    body {
+      background-color: lightblue;
+    }
+    .box{
+        height: 12rem;
+        width: 12rem;
+    }
+    .row{
+        gap: 100px;
+    }
+    .heading{
+        font-size: 60px;
+    }
+  }
+
+  @media (max-width: 555px) and (min-width: 420px){
+    body {
+      background-color: lightcoral;
+    }
+    .box{
+        height: 9rem;
+        width: 9rem;
+    }
+    .row{
+        gap: 60px;
+    }
+    .heading{
+        font-size: 50px;
+    }
+  }
+
+  @media (max-width: 420px) and (min-width: 332px){
+    body {
+      background-color: turquoise;
+    }
+    .box{
+        height: 7rem;
+        width: 7rem;
+    }
+    .row{
+        gap: 40px;
+    }
+    .heading{
+        font-size: 40px;
+    }
+    .main-container{
+        gap: 80px;
+    }
+  }
+
+
+  @media (max-width: 332px) and (min-width: 100px){
+    body {
+      background-color: turquoise;
+    }
+    .box{
+        height: 4rem;
+        width: 4rem;
+    }
+    .row{
+        gap: 40px;
+    }
+    .heading{
+        font-size: 40px;
+    }
+    .main-container{
+        gap: 80px;
+    }
+  }
