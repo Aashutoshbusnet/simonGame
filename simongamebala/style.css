@@ -17,10 +17,12 @@ body{
 }
 /* designing the heading which will be displayed above the boxes */
 .heading{
-    font-size: 80px;
+    font-size: 60px;
     font-family: monospace;
-    overflow: none
-;
+    overflow: none;
+}
+.heading:hover{
+    cursor: pointer;
 }
 /* designign the rows, just making it flex so it will be easy for me to resize  */
 .row{
@@ -45,7 +47,7 @@ body{
 .backgroundImage {
     /* width: 100vw; */
     background-color: black;
-    background-image: url('haramiaashutosh.jpeg');
+    background-image: url('haramiaashutosh.png');
     background-size: contain; /* Change to contain */
     background-position: center; /* Center the image */
     background-repeat: no-repeat;
